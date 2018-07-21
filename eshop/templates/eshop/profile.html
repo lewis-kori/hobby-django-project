@@ -1,0 +1,14 @@
+{%extends 'eshop/base.html'%}
+{%block title%}my profile{%endblock%}
+{%block body%}
+<header>
+<section>
+<nav class="container">
+        <h3 align="center">welcome {{user}}</h3>
+   <p>username:{{user.username}}</p>
+   <p>firstname:{{user.first_name}}</p>
+   <p>last name:{{user.last_name}}</p>
+   <p>email:{{user.email}}</p>
+</nav>
+</section>
+{%endblock%}

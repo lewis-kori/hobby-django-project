@@ -1,0 +1,13 @@
+{%extends 'eshop/base.html'%}
+{%block title%}login{%endblock%}
+{%block body%}
+<div class="container">
+    <P>Welcome, please login here</P>
+    <h3>login</h3>
+    <form method='POST'>
+         {% csrf_token %} 
+         {{form.as_p}}
+         <button class="btn btn-success col-ls-3 col-md-3 col-sm-2" value='login' type="submit">login</button>
+    </form>
+</div>
+{%endblock%}
